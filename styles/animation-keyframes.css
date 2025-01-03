@@ -1,0 +1,173 @@
+.a-fade-in-scale-in {
+    animation: fade-in linear forwards, scale-in linear forwards;
+    animation-timeline: view();
+    animation-range: 0% 40%;
+}
+
+.a-fade-in{
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 0% 40%;
+}
+
+.a-scale-in{
+    animation: scale-in linear forwards;
+    animation-timeline: view();
+    animation-range: 0% 40%;
+}
+
+.a-up-in{
+    animation: up-in linear forwards;
+    animation-timeline: view();
+    animation-range: 0% 40%;
+}
+
+.a-right-in{
+    animation: right-in linear forwards;
+    animation-timeline: view();
+    animation-range: 0% 40%;
+}
+
+.a-left-in{
+    animation: left-in linear forwards;
+    animation-timeline: view();
+    animation-range: 0% 40%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes scale-in {
+        from {
+            scale: .8;
+        }
+
+        to {
+            scale: 1;
+        }
+    }
+
+    @keyframes up-in {
+        from {
+            transform: translateY(100px);
+            
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes right-in {
+        from {
+            transform: translateX(-100px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes left-in {
+        from {
+            transform: translateX(100px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes rotate-4 {
+        from {
+            rotate: 10deg;
+        }
+
+        to {
+            rotate: -4deg;
+        }
+    }
+
+    @keyframes rotate-4d {
+        from {
+            rotate: -10deg;
+        }
+
+        to {
+            rotate: 4deg;
+        }
+    }
+
+
+
+
+    /* Animation first --------------------------------- */
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes rotate {
+
+        0%,
+        100% {
+            transform: rotate(0);
+        }
+
+        50% {
+            transform: rotate(3deg);
+        }
+    }
+
+    @keyframes zoom {
+
+        0%,
+        100% {
+            transform: scale(0.9);
+        }
+
+        50% {
+            transform: scale(1.0);
+        }
+    }
+
+    @keyframes zoom-shadow {
+
+        0%,
+        100% {
+            filter: drop-shadow(-0px 0px 5px rgba(0, 0, 0, 0.45));
+        }
+
+        50% {
+            filter: drop-shadow(20px 30px 10px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    @keyframes animate {
+
+        40%,
+        60% {
+            left: 100%;
+        }
+
+        100% {
+            left: 0%;
+        }
+    }
+}

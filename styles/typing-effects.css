@@ -1,0 +1,79 @@
+.animated-text {
+    font-weight: 700;
+    min-width: 400px;
+
+    font-family: Poppins;
+    font-size: 1.9rem;
+    line-height: 140%;
+    font-weight: 500;
+    ;
+
+}
+
+.animated-text span {
+    position: relative;
+    z-index: 0;
+    
+}
+
+.animated-text span::before {
+    content: "";
+    animation: words 16s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background: var(--color--BRANCO);
+    border-left: var(--color-Blue-idmida) solid 2px;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+
+@keyframes cursor {
+    to{
+        border-left: var(--color--BRANCO) solid 2px;
+    }
+}
+
+@keyframes words{
+    0%, 25%{
+        content: "Atraia mais clientes";
+    }
+    26%, 50%{
+        content: "Aumente suas vendas";
+    }
+    51%, 75%{
+        content: "Fortaleça sua marca";
+    }
+    76%, 100%{
+        content: "com soluções personlizadas";
+    }
+    
+}
+
+@keyframes typing{
+    10%, 15%,  30%, 35%, 50%, 55%,  70%, 75%,  90%, 95%{
+        width: 0;
+    }
+    5%, 20%,  25%, 40%, 45%, 60%, 65%,  80%, 85%,  100%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+
+:root {
+    --color-Blue-idmida: #0700FF;
+    --color-quase-preto: #1D1D1D;
+    --color---QUASE-BRANCO: #FCFCFC;
+    --color--BRANCO: #FFFFFF;
+    --color-Blue-dark: #1200B5;
+    --color-Blue-light: #0099FF;
+    --color-Gray-light: #ebebeb;
+    --color-Gray-dark: #949494;
+    --color-Red-dark: #ff0000;
+}
