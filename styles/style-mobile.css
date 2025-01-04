@@ -243,7 +243,7 @@
     }
 
     .planos-div {
-        
+
 
         & img {
             z-index: 0;
@@ -270,7 +270,7 @@
         & section aside {
             z-index: 1;
             width: 100vw;
-            
+
         }
 
 
@@ -285,15 +285,82 @@
     }
 
     .FAQ-div {
-        
+
         margin: 0 auto;
 
-        & section{
+        & section {
             width: 100%;
         }
     }
 
-    
+    .sobre-nos-div {
+        display: flex;
+        flex-direction: column;
+
+
+        & .value-left {
+            padding: 0 15% 0 15%;
+            width: 100%;
+        }
+
+        & .value-right {
+            padding: 0 15% 0 15%;
+            width: 100%;
+            padding: 0 0 30% 0;
+
+            & .value-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        & .bg-rounded {
+            display: none;
+        }
+    }
+
+    .contact-form-div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        & .contact-form,
+        & .form {
+            animation: none;
+        }
+
+        & .contact-form {
+            
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 4rem;
+            width: 100%;
+            margin: 0 auto;
+
+            & h2{
+                font-size: calc(10vw / 16 * 9);
+            }
+
+            & aside p{
+                font-size: calc(5vw / 16 * 9);
+            }
+            & aside i{
+                font-size: calc(8vw / 16 * 9);
+            }
+        }
+
+
+    }
+
+    .container-footer img {
+        width: 50px;
+    }
+    .menu-footer{
+        display: none;
+    }
 
 
 

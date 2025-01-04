@@ -2,7 +2,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    
+
 }
 
 .body {
@@ -256,7 +256,7 @@ header {
         height: 100%;
         object-fit: contain;
         filter: drop-shadow(-10px 10px 15px rgba(0, 0, 0, 0.3));
-        
+
 
         animation: rotate 4s infinite ease-in-out;
     }
@@ -265,7 +265,7 @@ header {
         transform: scale(1.05);
     }
 }
-    
+
 
 
 
@@ -345,7 +345,7 @@ header {
         transition: transform 1s ease;
     }
 
-    
+
 
     & .slide {
         position: absolute;
@@ -800,7 +800,7 @@ header {
         text-align: left;
 
         & tr {
-            animation:  scale-in linear forwards                       ;
+            animation: scale-in linear forwards;
             animation-timeline: view();
             animation-range: 0% 40%;
         }
@@ -1000,8 +1000,8 @@ header {
         cursor: pointer;
         line-height: 120%;
 
-        
-        
+
+
     }
 
 }
@@ -1023,6 +1023,8 @@ header {
     & .value-left {
         z-index: 1;
     }
+
+
 
     /* rgb(7, 0, 255) */
     & .value-left {
@@ -1059,6 +1061,13 @@ header {
     }
 
     /* nosso valores */
+    & .value-grid {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
 
     & .value-right {
         width: 20%;
@@ -1101,7 +1110,7 @@ header {
         border-bottom: var(--color-Blue-idmida) solid 1px;
     }
 
-    & .value{
+    & .value {
         animation: fade-in linear forwards, scale-in linear forwards;
         animation-timeline: view();
         animation-range: 0% 40%;
