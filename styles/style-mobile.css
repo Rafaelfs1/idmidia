@@ -106,10 +106,13 @@
 
 
         & h1 {
-            font-size: 3.5rem;
+            font-size: calc(15vw / 16 * 9);
             width: 100vw;
         }
 
+        & .animated-text span{
+            font-size: calc(10vw / 16 * 9);
+        }
 
         & #img1 {
             top: 40%;
@@ -130,7 +133,7 @@
 
 
             & input {
-                width: 250px;
+                width: calc(15vw * 16 / 9);
             }
 
             & button {
